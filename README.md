@@ -17,6 +17,10 @@ chmod +x install.sh
 # Start IPFS Daemon
 screen -S ravencoinipfs ipfs daemon
 
+# OR if you prefer not using screen
+
+ipfs daemon &
+
 # Syncing the daily Ravencoin Chain Pins listed on https://bootstrap.ravenland.org/
 # doesnt include recursive directories yet (working on it!)
 ravencoin-ipfs-bootstrap-tools/sync_all_not_related_ipfs_hashes.sh
