@@ -28,7 +28,7 @@ ravencoin-ipfs-bootstrap-tools/sync_all_not_related_ipfs_hashes.sh
 
 #  If you run IPFS server and just want to pin all Ravencoin IPFS hashes
 
-For those that perhaps already have an IPFS node running and want to heko support the ravencoin network, or merely just have a copy of all the IPFS hashes added to it. Look no further! The below steps show someone who has an existing IPFS server how to pin all of the Objects on the Ravencoin blockchain using Ravenland's existing ravencoin-ipfs-bootstrap-tools (https://github.com/ravenlandpush/ravencoin-ipfs-bootstrap-tools). The steps are given below.
+For those that perhaps already have an IPFS node running and want to help support the Ravencoin Network abd community, or merely just have a strong desire to obtain a network peer copy of all the IPFS hashes added to Ravencoin blockchain, Look no further! The below steps show someone who has an existing IPFS server how to pin all of the Objects on the Ravencoin blockchain using Ravenland's existing ravencoin-ipfs-bootstrap-tools (https://github.com/ravenlandpush/ravencoin-ipfs-bootstrap-tools). The steps are given below.
 
 
 ```
