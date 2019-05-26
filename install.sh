@@ -17,8 +17,8 @@ ipfs init
 #
 echo "Support for Ubuntu, Debian, possibly Redhat and CentOS"
 echo "trying yum and aptitude install for git installation. Safely ignore command not found errors.."
-sudo yum install git
-sudo apt-get install git
+sudo yum install git screen
+sudo apt-get install git screen
 
 git clone https://github.com/ravenlandpush/ravencoin-ipfs-bootstrap-tools/
 
