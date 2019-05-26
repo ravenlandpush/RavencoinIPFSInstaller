@@ -28,7 +28,7 @@ ravencoin-ipfs-bootstrap-tools/sync_all_not_related_ipfs_hashes.sh
 
 #  If you run IPFS server and just want to pin all Ravencoin IPFS hashes
 
-For those that perhaps already have an IPFS node running and want to help support the Ravencoin Network abd community, or merely just have a strong desire to obtain a network peer copy of all the IPFS hashes added to Ravencoin blockchain, Look no further! The below steps show someone who has an existing IPFS server how to pin all of the Objects on the Ravencoin blockchain using Ravenland's existing ravencoin-ipfs-bootstrap-tools (https://github.com/ravenlandpush/ravencoin-ipfs-bootstrap-tools). The steps are given below.
+For those that perhaps already have an IPFS node running and want to help support the Ravencoin Network abd community, or merely just have a strong desire to obtain a network peer copy of all the IPFS hashes added to Ravencoin blockchain onto their hard disk, Look no further! The below steps show someone who has an existing IPFS server how to pin all of the Objects on the Ravencoin blockchain using Ravenland's existing ravencoin-ipfs-bootstrap-tools (https://github.com/ravenlandpush/ravencoin-ipfs-bootstrap-tools). The steps are given below.
 
 
 ```
@@ -38,4 +38,20 @@ chmod +x sync_all_not_related_ipfs_hashes.sh
 ./sync_all_not_related_ipfs_hashes.sh
 ```
 
+# Adding to Crontab - unfinished automation
+
+```
+# Add a cronjob command for the installed tools
+# this script does rightly assume user has ran a cd ~ and/or is in their /home/user directory.
+
+# add the ravencoin-boot-strap to cron to run at 1AM every day and sync ravencoin blockchain objects occurring on IPFS
+croncmd="/home/$whoami/ravencoin-boot-strap-tools/sync_all_not_related_ipfs_hashes.sh > /home/$whoami/ravencoinipfsbootstrapmirror.log 2>&1"
+# uncomment this alternative command if you want to sync all RELATED ravencoin IPFS objects (these are ipfs_hashes that appear inside any other ravencoin ipfs_hash)
+#croncmd="/home/$whoami/ravencoin-boot-strap-tools/sync_all_and_related_ipfs_hashes.sh > /home/$whoami/ravencoinipfsbootstrapmirror.log 2>&1"
+
+# Leave this be
+cronjob=" 0 1 * * * $croncmd"
+
+# To add it to the crontab, with no duplication:
+( crontab -l | grep -v -F "$croncmd" ; echo "$cronjob" ) | crontab -```
 
