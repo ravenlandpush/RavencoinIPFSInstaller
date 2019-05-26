@@ -6,6 +6,7 @@ RavencoinIPFSInstaller is an automatic installer for Ravencoin + IPFS for people
 
 
 # Install + Setup
+Make sure you perform the below steps as the 'ubuntu' or 'centos' user, or a user which has sudo permissions by default. 
 ```
 wget https://raw.githubusercontent.com/ravenlandpush/RavencoinIPFSInstaller/master/install.sh
 chmod +x install.sh
@@ -13,6 +14,7 @@ chmod +x install.sh
 ```
 
 # Starting the IPFS Daemon / Server
+Make sure you perform these below steps as a non root user. Running these scripts as the root user, as with any software is ill advised.
 ```
 #permissions may be required
 chmod +x startipfs.sh
