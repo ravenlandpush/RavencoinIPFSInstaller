@@ -22,5 +22,8 @@ sudo apt-get install git screen
 
 git clone https://github.com/ravenlandpush/ravencoin-ipfs-bootstrap-tools/
 
+# start IPFS now
+ipfs daemon &
+
 chmod +x ravencoin-ipfs-bootstrap-tools/sync_all_not_related_ipfs_hashes.sh
 ravencoin-ipfs-bootstrap-tools/sync_all_not_related_ipfs_hashes.sh
