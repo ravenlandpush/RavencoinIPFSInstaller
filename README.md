@@ -38,7 +38,8 @@ chmod +x sync_all_not_related_ipfs_hashes.sh
 ./sync_all_not_related_ipfs_hashes.sh
 ```
 
-# Adding to Crontab - unfinished automation
+# Adding to Crontab - unfinished/incomplete - Run IPFS bootstrap pin 1AM nightly.
+The below crontab 'script' works. However, you need to replace the sections $whoami with the username you want it to run under. Also the working path is assumed of the cronjob. That is why it is not present in the current automation.
 
 ```
 # Add a cronjob command for the installed tools
@@ -54,4 +55,7 @@ cronjob=" 0 1 * * * $croncmd"
 
 # To add it to the crontab, with no duplication:
 ( crontab -l | grep -v -F "$croncmd" ; echo "$cronjob" ) | crontab -```
+```
 
+# TODO: SystemD script for IPFS and automation to install service using sudo. 
+A simple enough ish thing, and already presently supported on RavencoinOS on Raspian Pi based on Raspbian. Coming soon.
