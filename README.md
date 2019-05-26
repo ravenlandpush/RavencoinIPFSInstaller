@@ -1,15 +1,11 @@
 # RavencoinIPFSInstaller
 An automatic Ravencoin IPFS Installer and Pinner for Linux Debian/Ubuntu/Redhat/CentOS operating Systems
 
-# About
+# What is RavencoinIPFSInstaller?
 This is For Linux distributions only. RavencoinIPFSInstaller is an automatic installer for Ravencoin + IPFS for people that want to support the Ravencoin cryptocurrency Network's interplanetary filesystem. Ravencoin is dependent upon a protocol called IPFS which allows using DHT torrent technology to distribute files. When someone creates an ravencoin asset, they can attach an IPFS hash, which is a unique signature for a file. This system allows anyone to join the public DHT network and mirror a copy of all the Ravencoin objects. (as is done with https://ravencoinos.org). Except that this version will automatically install IPFS + sync the ravencoin blockchain ipfs objects from the https://bootstrap.ravenland.org/ service. 
 
-# Premise
-Dear Ravencoin Supporter,
-Do you want to significantly help the RavencoinOS Interplanetary File System (IPFS) Dynamic Hash Table (DHT) network? 
-Now is your chance. Simply run the below commands to install IPFS and get started working with Ravencoin IPFS
 
-#Install IPFS and Sync Ravencoin IPFS hash network
+# Install + Setup
 ```
 wget https://raw.githubusercontent.com/ravenlandpush/RavencoinIPFSInstaller/master/install.sh
 chmod +x install.sh
