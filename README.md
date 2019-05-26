@@ -26,5 +26,14 @@ ipfs daemon &
 ravencoin-ipfs-bootstrap-tools/sync_all_not_related_ipfs_hashes.sh
 ```
 
+# Installing Ravencoin IPFS Bootstrap Tools (extra unnecessary info)
+The above script actually installs the below for you. Including this for reference
 
+```
+git clone https://github.com/ravenlandpush/ravencoin-ipfs-bootstrap-tools
+cd ravencoin-ipfs-bootstrap.tools
+chmod +x sync_all_not_related_ipfs_hashes.sh
+./sync_all_not_related_ipfs_hashes.sh
+```
 
+This last step is already ran by the above scripts, however it is included for clarity.
